@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffe6ee" />
+  <meta name="description" content="A little heartfelt apology from Bambi." />
+  <title>A Little Something From Bambi 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div><div class="glow glow-two" aria-hidden="true"></div>
+  <main class="app">
+    <div class="topline"><span>♡</span> a tiny message, just for you <span>♡</span></div>
+
+    <section id="screen1" class="screen active" aria-labelledby="question1">
+      <div class="photo-card photo-first">
+        <img src="assets/bambi-front.jpg" alt="Bambi, the real white fluffy dog, wearing a pink outfit" />
+        <div class="photo-sticker">please don't be mad 🥺</div>
+        <span class="sparkle s1">✦</span><span class="sparkle s2">♡</span>
+      </div>
+      <p class="eyebrow">psst... bambi has a question</p>
+      <h1 id="question1">Are you still<br /><em>mad at me?</em></h1>
+      <p class="subtext">I brought my cutest face and a very important question... 🐾</p>
+      <button class="button primary" id="firstYes">Yes, I am 😠 <span>→</span></button>
+      <p class="microcopy">please don't look at me like that 🥹</p>
+    </section>
+
+    <section id="screen2" class="screen" aria-labelledby="question2" hidden>
+      <div class="photo-card photo-second">
+        <img src="assets/bambi-smile.jpg" alt="Bambi smiling in a pink traditional outfit" />
+        <div class="photo-sticker">but look at this face! ♡</div>
+      </div>
+      <p class="eyebrow">wait, wait, wait...</p>
+      <h1 id="question2">Really? <em>Still mad?</em></h1>
+      <p class="subtext">Even after Bambi came all the way here to say sorry? 🥺</p>
+      <div class="choices" id="choices">
+        <button class="button primary" id="forgive">No Bambi 🥺 💗</button>
+        <button class="button escape" id="runaway">Yes 😡</button>
+      </div>
+      <p class="microcopy">psst... the angry button is a little shy 🤭</p>
+    </section>
+
+    <section id="screen3" class="screen letter-screen" aria-labelledby="letterTitle" hidden>
+      <p class="eyebrow">from my heart to yours</p>
+      <h1 id="letterTitle">A letter <em>for you</em> 💌</h1>
+      <p class="subtext">Some things deserve more than just “sorry.”</p>
+      <div class="envelope-stage" id="envelopeStage" aria-hidden="true">
+        <div class="envelope-back"></div><div class="envelope-paper">for you ♡</div><div class="envelope-front"></div><div class="envelope-flap"></div><div class="envelope-seal">♥</div>
+      </div>
+      <article class="paper" id="paper" aria-label="Apology letter">
+        <div class="paper-heading">To my Babuu, <span>♡</span></div>
+        <div class="letter-lines" id="letterLines" aria-live="polite"></div>
+        <div class="signature" id="signature" hidden>With all my love,<br /><strong>Your very sorry idiot ♡</strong></div>
+      </article>
+      <p class="letter-status" id="letterStatus">Opening your letter...</p>
+      <button class="button primary final-next" id="next" hidden>One last thing 💗 →</button>
+    </section>
+
+    <section id="screen4" class="screen" aria-labelledby="finalTitle" hidden>
+      <div class="photo-card photo-last">
+        <img src="assets/bambi-happy.jpg" alt="Bambi looking happy" />
+        <div class="photo-sticker">sending you a hug ♡</div>
+      </div>
+      <p class="eyebrow">one last little thing</p>
+      <h1 id="finalTitle">I'm sorry, <em>Bambi.</em></h1>
+      <p class="subtext final-text">You mean so much to me. I know I hurt you, and I want to do better, not just say better things. Take all the time you need. ❤️</p>
+      <div class="big-heart" aria-hidden="true">💗</div>
+      <button class="button primary" id="replay">Read it again 💌</button>
+    </section>
+
+    <footer>made with love, a little courage & a lot of sorry ♡</footer>
+  </main>
+</body>
+</html>
